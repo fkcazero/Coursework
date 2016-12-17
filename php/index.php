@@ -20,4 +20,6 @@ while ($row = mysqli_fetch_assoc($query))
 
 }
 
+echo "hell";
+
 ?>
