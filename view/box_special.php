@@ -9,5 +9,5 @@
             <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br />
                 adipiscing nunc adipiscing. Condimentum turpis massa.</p>
         </header>
-        <span class="image featured"><img src="assets/images/pic01.jpg" alt="" /></span>
+        <span class="image featured"><img src="assets/images/pic01.jpg" alt="" id="height100"/></span>
     </section>

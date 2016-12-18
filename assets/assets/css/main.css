@@ -2277,6 +2277,10 @@
 				border-radius: 0;
 				display: block;
 				width: 100%;
+
+			}
+
+			.box .image.featured .height335 {
 				max-height: 335px;
 			}
 
