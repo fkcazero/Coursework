@@ -1,3 +1,4 @@
+<title>Автоновости</title>
 
 <?php
 include_once('db_connect.php');

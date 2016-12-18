@@ -1,7 +1,7 @@
 <!-- Banner -->
 <section id="banner">
-    <h2>Alpha</h2>
-    <p>Another fine responsive site template freebie by HTML5 UP.</p>
+    <h2>АВТОНОВОСТИ</h2>
+    <p></p>
     <ul class="actions">
         <li><a href="#" class="button special">Sign Up</a></li>
         <li><a href="#" class="button">Learn More</a></li>
