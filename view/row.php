@@ -1,28 +1,27 @@
 <div class="row">
-    <div class="6u 12u(narrower)">
+    <?php
 
-        <section class="box special">
-            <span class="image featured"><img src="images/pic02.jpg" alt="" /></span>
-            <h3>Sed lorem adipiscing</h3>
-            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-            <ul class="actions">
-                <li><a href="#" class="button alt">Learn More</a></li>
-            </ul>
-        </section>
+    while ($row = mysqli_fetch_assoc($query))
 
-    </div>
-    <div class="6u 12u(narrower)">
+    {?>
 
-        <section class="box special">
-            <span class="image featured"><img src="images/pic03.jpg" alt="" /></span>
-            <h3>Accumsan integer</h3>
-            <p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-            <ul class="actions">
-                <li><a href="#" class="button alt">Learn More</a></li>
-            </ul>
-        </section>
+        <div class="6u 12u(narrower)">
 
-    </div>
+            <section class="box special">
+                <span class="image featured"><img src="img/<?php echo $row['file']?>" alt="" /></span>
+                <h3><?php echo $row['title']?></h3>
+                <p>Дата публикации: <?php echo $row['date']?> / <?php echo $row['time']?></p>
+                <p>Автор новости: <?php echo $row['author']?></p>
+                <ul class="actions">
+                    <li><a href="#" class="button alt">Learn More</a></li>
+                </ul>
+            </section>
+
+        </div>
+
+
+    <?php }?>
+
 </div>
 
 </section>
