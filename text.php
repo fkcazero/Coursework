@@ -1,12 +1,13 @@
 <?php
 
-include_once('setting.php');
+//include_once('setting.php');
 
-$connection = mysqli_connect(HOST, USER, PASSWORD, DB);
+$connect = mysqli_connect(`localhost`,`root`,``,`my_db`);
 
-mysqli_query($connection, "SET NAMES utf8");
+mysqli_query($connect, "SET NAMES utf8");
 
-if(!$connection) exit("Ошыбка подключения к БД!");
+if(!$connect) exit("Ошыбка подключения к БД!");
 
-$query = mysqli_query( $connection, "SELECT `text` FROM `auto` ");
+$query = mysqli_query( $connect, " SELECT * FROM `auto` ");
 
+?>
