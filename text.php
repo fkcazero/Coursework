@@ -8,6 +8,6 @@ mysqli_query($connect, "SET NAMES utf8");
 
 if(!$connect) exit("Ошыбка подключения к БД!");
 
-$query = mysqli_query( $connect, " SELECT * FROM `auto` ");
+$query = mysqli_query( $connect, " SELECT `text` FROM `auto` WHERE ");
 
-?>
+//echo 'hello I am new 1';

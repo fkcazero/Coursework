@@ -41,7 +41,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="/register.php" class="button">Sign Up</a></li>
+                <li><a href="register.php" class="button">Sign Up</a></li>
             </ul>
         </nav>
     </header>

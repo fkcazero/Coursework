@@ -8,5 +8,5 @@ mysqli_query($connection, "SET NAMES utf8");
 
 if(!$connection) exit("Ошыбка подключения к БД!");
 
-$query = mysqli_query( $connection, "SELECT * FROM `auto` ORDER BY time DESC");
+$query = mysqli_query( $connection, "SELECT `id`, `title`, `file`, `date`, `time`, `author` FROM `auto` ORDER BY time DESC");
 
