@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Anatolii
- * Date: 2016-12-18
- * Time: 16:38
- */
 
 include_once('setting.php');
 

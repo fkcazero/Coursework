@@ -23,7 +23,7 @@
                 <li><a href="http://localhost/Coursework0/">Главная</a></li>
                 <li><a href="index.html">Гостевая страница</a></li>
                 <li><a href="index.html">Личный кабинет</a></li>
-                <li><a href="about_author.php">Об авторах</a></li>
+                <li><a href="/about_author.php">Об авторах</a></li>
                 <li>
                     <a href="#" class="icon fa-angle-down">Список тем</a>
                     <ul>
