@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Alpha by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -17,31 +13,23 @@
 
     <!-- Header -->
     <header id="header" class="alt">
-        <h1><a href="index.html">что</a> написать</h1>
         <nav id="nav">
             <ul>
                 <li><a href="http://localhost/Coursework0/">Главная</a></li>
-                <li><a href="index.html">Гостевая страница</a></li>
-                <li><a href="index.html">Личный кабинет</a></li>
-                <li><a href="/about_author.php">Об авторах</a></li>
+                <li><a href="guests.php">Гостевая страница</a></li>
+                <li><a href="kabinet.php">Личный кабинет</a></li>
+                <li><a href="about_author.php">Об авторах</a></li>
+                <li><a href="news/add.php">Добавление новости</a></li>
+                <li><a href="news.php">Новости</a></li>
                 <li>
                     <a href="#" class="icon fa-angle-down">Список тем</a>
                     <ul>
-                        <li><a href="generic.html">Generic</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="elements.html">Elements</a></li>
-                        <li>
-                            <a href="#">Option</a>
-                            <ul>
-                                <li><a href="#">Option One</a></li>
-                                <li><a href="#">Option Two</a></li>
-                                <li><a href="#">Option Three</a></li>
-                                <li><a href="#">Option Four</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="">Тема 1</a></li>
+                        <li><a href="">Тема 2</a></li>
+                        <li><a href="">Тема 3</a></li>
                     </ul>
                 </li>
-                <li><a href="register.php" class="button">Sign Up</a></li>
+                <li><a href="register.php" class="button">Регистрация</a></li>
             </ul>
         </nav>
     </header>

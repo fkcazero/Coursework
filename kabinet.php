@@ -27,21 +27,24 @@
     </header>
 </div>
 
-
-<title>Об авторах</title>
+<title>Личный кабинет</title>
 
 <?php
 
 $mysqli = mysqli_connect ("localhost", "root", "", "my_bd");
 mysqli_query($mysqli, "SET NAMES utf8");
 
-$res = $mysqli->query("SELECT `name`, `biography` FROM `about_author` ");
+$res = $mysqli->query("SELECT `username`, `login` FROM `registr` ORDER BY id ASC");
 
 // цикл while працює доки змінна $row не досягне останнього значення обєкту $res
-while ($row = $res->fetch_assoc()){?>
-<br><br><br>
-    <h3>Имя автора: <?php echo $row['name']?></h3>
-    <h3> <?php echo $row['biography']?></h3>
+while ($row = $res->fetch_assoc())
+{?>
+    <br><br>
+    <style>
+        p { text-indent: 25px; }
+    </style>
+    <p>Имя пользователя: <?php echo $row['username']?></p>
+<p>Логин: <?php echo $row['login']?></p><hr>
+    <?php
 
-<?php
 }?>

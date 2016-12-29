@@ -28,20 +28,33 @@
 </div>
 
 
-<title>Об авторах</title>
+
+<title>Добавление новости</title>
 
 <?php
-
+// зєднання з базою даних
 $mysqli = mysqli_connect ("localhost", "root", "", "my_bd");
 mysqli_query($mysqli, "SET NAMES utf8");
 
-$res = $mysqli->query("SELECT `name`, `biography` FROM `about_author` ");
+?>
 
-// цикл while працює доки змінна $row не досягне останнього значення обєкту $res
-while ($row = $res->fetch_assoc()){?>
+
 <br><br><br>
-    <h3>Имя автора: <?php echo $row['name']?></h3>
-    <h3> <?php echo $row['biography']?></h3>
 
-<?php
-}?>
+<form name="addnews" action="addnews.php" method="post">
+    <style>
+        p { text-indent: 25px; }
+    </style><br><br>
+    <p>
+        <label>  Имя автора: </label>
+        <input type="text" name="name" />
+    </p>
+    <p>
+        <label>  Новость: </label>
+        <br />
+        <textarea name="text" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Отправить" />
+    </p>
+</form>

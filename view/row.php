@@ -13,14 +13,14 @@
                 <p>Дата публикации: <?php echo $row['date']?> / <?php echo $row['time']?></p>
                 <p>Автор новости: <?php echo $row['author']?></p>
                 <ul class="actions">
+
                     <li><a href="text.php" class="button alt">Читать</a></li>
+
                 </ul>
             </section>
 
         </div>
 
-
     <?php }?>
 
 </div>
-

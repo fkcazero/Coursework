@@ -27,21 +27,33 @@
     </header>
 </div>
 
+<title>Гостевая страница</title>
 
-<title>Об авторах</title>
 
-<?php
+<form name="comment" action="comment.php" method="post">
+    <style>
+p { text-indent: 25px; }
+    </style>
+    <br><br><br>
+    <p>
+        <label>  Имя:</label>
+        <input type="text" name="name" />
+    </p>
+    <p>
+        <label>  Комментарий:</label>
+        <br />
+        <textarea name="text_comment" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+        <input type="hidden" name="page_id" value="2" />
+        <input type="submit" value="Отправить" />
+    </p>
+</form>
 
-$mysqli = mysqli_connect ("localhost", "root", "", "my_bd");
-mysqli_query($mysqli, "SET NAMES utf8");
-
-$res = $mysqli->query("SELECT `name`, `biography` FROM `about_author` ");
-
-// цикл while працює доки змінна $row не досягне останнього значення обєкту $res
-while ($row = $res->fetch_assoc()){?>
-<br><br><br>
-    <h3>Имя автора: <?php echo $row['name']?></h3>
-    <h3> <?php echo $row['biography']?></h3>
-
-<?php
-}?>
+<footer id="footer">
+    <ul class="icons">
+        <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+        <script src="//yastatic.net/share2/share.js"></script>
+        <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,twitter"></div>
+    </ul>
+</footer>
